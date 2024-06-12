@@ -36,7 +36,7 @@ import LeftPanel from "./LeftPanel";
 import Error from "./Error";
 
 function VideoSection() {
-  const backendURL = "http://localhost:3000";
+  const backendURL = "https://backend-vygo.onrender.com";
   const { id } = useParams();
   const [videoData, setVideoData] = useState(null);
   const [email, setEmail] = useState();
@@ -298,7 +298,7 @@ function VideoSection() {
     const getVideos = async () => {
       try {
         const response = await fetch(
-          "http://localhost:3000/getvideos"
+          "https://backend-vygo.onrender.com/getvideos"
         );
         const {
           thumbnailURLs,
