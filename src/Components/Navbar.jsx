@@ -158,25 +158,6 @@ function Navbar() {
             className="second-search"
             onClick={() => setNewSearch(true)}
           />
-          <Tooltip
-            TransitionComponent={Zoom}
-            title="YouTube studio"
-            placement="bottom"
-          >
-            <AiOutlineVideoCameraAdd
-              className={theme ? "icon-btns videocreate" : "video-light"}
-              fontSize="24px"
-              style={{ color: theme ? "white" : "black" }}
-              onClick={() => {
-                if (token) {
-                  window.location.href = "/studio";
-                } else {
-                  setisbtnClicked(true);
-                  document.body.classList.add("bg-css");
-                }
-              }}
-            />
-          </Tooltip>
 
           <button
             onClick={() => {
