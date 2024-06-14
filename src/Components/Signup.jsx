@@ -64,7 +64,7 @@ function Signup() {
     }
     try {
       const response = await fetch(`${backendURL}/signup`, {
-        method: "POST",
+        method: "GET",
         body: JSON.stringify(data),
         headers: {
           "Content-Type": "application/json",
